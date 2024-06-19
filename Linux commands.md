@@ -74,16 +74,16 @@ Change: 2024-06-18 21:25:17.761273922 +0530
 
 **If we want to set the modify timestamp then we can use `touch -d` command
 ```bash
-nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~/Documents$ touch -d "2024-06-19" file1
-nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~/Documents$ stat file1
+nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ touch -d "2024-06-19 10:54" file1
+nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ stat file1
   File: file1
   Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
-Device: 10302h/66306d	Inode: 11151124    Links: 1
+Device: 10302h/66306d	Inode: 11147913    Links: 1
 Access: (0664/-rw-rw-r--)  Uid: ( 1000/nitishkumar)   Gid: ( 1000/nitishkumar)
-Access: 2024-06-19 00:00:00.000000000 +0530
-Modify: 2024-06-19 00:00:00.000000000 +0530
-Change: 2024-06-19 00:10:28.598763007 +0530
- Birth: 2024-06-18 20:36:17.695801603 +0530
+Access: 2024-06-19 10:54:00.000000000 +0530
+Modify: 2024-06-19 10:54:00.000000000 +0530
+Change: 2024-06-19 10:54:06.044621694 +0530
+ Birth: 2024-06-19 10:54:06.044621694 +0530
 ```
 
 ### 2. vim command
