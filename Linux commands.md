@@ -169,7 +169,7 @@ dir1  dir2  dir3  dir4  new_directory
 sudo chown -c new_owner file/directory name
 ```
 
-`Remember, ownership can be changed only by the person who created the file or directory.`
+* Note: `Remember, ownership can be changed only by the person who created the file or directory.`
 
 ### 2. CHGRP Command
 * `chgrp` command used for change group of any file or directory. We can change group of any file or directory with the help of `chgrp` command.
@@ -237,5 +237,26 @@ chmod ugo-r filename
 ```bash
 chmod a+rwx filename (adding permission for all)
 ```
-* `Note: Remember, Only its owner can change the permission of the file.`
+* Note: `Remember, Only its owner can change the permission of the file except root user. Because root user can change permission of any file or directories.`
+**Example**
+* In this example we remove write (w)permission for current user
+```bash
+nitishkumar@nitish:~/Documents$ ls -l
+total 4
+drwxrwxr-x 2 nitishkumar nitishkumar 4096 Jul  2 23:12 new_directory
+nitishkumar@nitish:~/Documents$ chmod u-w new_directory
+nitishkumar@nitish:~/Documents$ ls -l
+total 4
+dr-xrwxr-x 2 nitishkumar nitishkumar 4096 Jul  2 23:12 new_directory
+
+```
+
+* In this Example we remove read (r)permission for others
+```bash
+nitishkumar@nitish:~/Documents$ chmod o-r new_directory
+nitishkumar@nitish:~/Documents$ ls -l
+total 4
+dr-xrwx--x 2 nitishkumar nitishkumar 4096 Jul  2 23:12 new_directory
+
+```
 
