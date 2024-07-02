@@ -238,6 +238,7 @@ chmod ugo-r filename
 chmod a+rwx filename (adding permission for all)
 ```
 * Note: `Remember, Only its owner can change the permission of the file except root user. Because root user can change permission of any file or directories.`
+
 **Example**
 * In this example we remove write (w)permission for current user
 ```bash
