@@ -121,7 +121,7 @@ Hello nitish
 
 ```
 
-**some common Vim commandsand shortcuts that are useful for editing text in the terminal**
+**some common Vim commands and shortcuts that are useful for editing text in the terminal**
 1. Save the file (write).
 ```bash
 :w
@@ -139,7 +139,7 @@ Hello nitish
 :q!
 ```
 
-### MKDIR command
+### 3. MKDIR Command
 * `mkdir` (make directory) command used for creating a new directories.
 ```bash
 mkdir directory_name
@@ -160,5 +160,82 @@ mkdir dir1 dir2 dir3 dir4
 nitishkumar@nitish:~/Documents$ mkdir dir1 dir2 dir3 dir4
 nitishkumar@nitish:~/Documents$ ls
 dir1  dir2  dir3  dir4  new_directory
-
 ```
+
+## File and Folder Permission command
+### 1. CHOWN Command
+* `chown` command is a change ownership command. We can change ownership of any file or directory with the help of `chown` command.
+```bash
+sudo chown -c new_owner file/directory name
+```
+
+`Remember, ownership can be changed only by the person who created the file or directory.`
+
+### 2. CHGRP Command
+* `chgrp` command used for change group of any file or directory. We can change group of any file or directory with the help of `chgrp` command.
+```bash
+sudo chgrp -c new_groupname file/directory name
+```
+### 3. CHMOD Command
+* `chmod` (change mode) command is used to change the file system modes/permissions of files and directories.
+
+**Types of permission**
+  1. r: read 
+  2. w: write 
+  3. x: execute
+
+**Permissions (rwx) levels:**
+u- Yourself (current user)
+g- group in which user belongs to
+o- others
+a- all
+
+**How to see the permissions**
+```bash
+ls -l or ls -ltr
+```
+
+```bash
+nitishkumar@nitish:~$ ls -ltr
+total 282412
+-rwxr-xr-x   1 nitishkumar nitishkumar  11894416 Jul 18  2021  chromedriver
+-rw-r--r--   1 nitishkumar nitishkumar    326542 May 27  2023  LICENSE.chromedriver
+drwxr-xr-x   2 nitishkumar nitishkumar      4096 Feb 22 17:40  Videos
+drwxr-xr-x   2 nitishkumar nitishkumar      4096 Feb 22 17:40  Templates
+drwxr-xr-x   2 nitishkumar nitishkumar      4096 Feb 22 17:40  Music
+-rw-rw-r--   1 nitishkumar nitishkumar 167613956 Mar 12 16:27  jdk-22_linux-x64_bin.deb
+-rw-rw-r--   1 nitishkumar nitishkumar        68 Apr  3 11:55  bash.bashrc
+-rw-r--r--   1 root        root              233 Apr 19 16:06  1
+-rw-r--r--   1 root        root              233 Apr 20 10:40 '\'
+-rw-r--r--   1 root        root                0 Apr 25 18:00  Mongodb
+drwxrwxr-x   3 nitishkumar nitishkumar      4096 May 21 12:01  Postman
+drwxr-xr-x   3 nitishkumar nitishkumar      4096 Jun 15 10:19  Pictures
+drwxrwxr-x   4 nitishkumar nitishkumar      4096 Jun 21 00:16  mernstack_chat
+-rw-rw-r--   1 nitishkumar nitishkumar       268 Jun 21 20:05  package.json
+drwxrwxr-x 505 nitishkumar nitishkumar     20480 Jun 21 20:05  node_modules
+-rw-rw-r--   1 nitishkumar nitishkumar    486823 Jun 21 20:05  package-lock.json
+-rw-rw-r--   1 nitishkumar nitishkumar 108773084 Jun 22 07:29  google-chrome-stable_current_amd64.deb
+drwxrwxr-x   3 nitishkumar nitishkumar      4096 Jun 24 21:05  eclipse
+drwx------   8 nitishkumar nitishkumar      4096 Jun 24 23:18  snap
+drwxrwxr-x   6 nitishkumar nitishkumar      4096 Jun 25 00:48  eclipse-workspace
+drwxr-xr-x  10 nitishkumar nitishkumar      4096 Jul  2 16:33  Downloads
+drwxr-xr-x  11 nitishkumar nitishkumar      4096 Jul  2 23:11  Desktop
+drwxr-xr-x   7 nitishkumar nitishkumar      4096 Jul  2 23:15  Documents
+```
+
+**Command of change permission**
+```bash
+chmod u+r filename (For adding permission)
+chmod u-r filename (For removing permission)
+```
+
+```bash
+chmod ugo+r filename
+chmod ugo-r filename
+```
+
+```bash
+chmod a+rwx filename (adding permission for all)
+```
+* `Note: Remember, Only its owner can change the permission of the file.`
+
