@@ -87,4 +87,78 @@ Change: 2024-06-19 10:54:06.044621694 +0530
 ```
 
 ### 2. vim command
-* 
+* `vim` command is an editor to create or edit a text file. It is used to open a file in vim editor
+```bash
+vim filename
+```
+
+```bash
+nitishkumar@nitish:~/Documents$ vim file1
+
+Hello nitish
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+"file1" 2L, 14B                                               2,12          All
+
+```
+
+**some common Vim commandsand shortcuts that are useful for editing text in the terminal**
+1. Save the file (write).
+```bash
+:w
+```
+2. Quit Vim editor.
+```bash
+:q
+```
+3. Save and quit Vim editor
+```bash
+:wq or :x
+```
+4.  Quit without saving.
+```bash
+:q!
+```
+
+### MKDIR command
+* `mkdir` (make directory) command used for creating a new directories.
+```bash
+mkdir directory_name
+```
+
+```bash
+nitishkumar@nitish:~/Documents$ mkdir new_directory
+nitishkumar@nitish:~/Documents$ ls
+new_directory
+```
+
+**we can create multiple directory at once**
+```bash
+mkdir dir1 dir2 dir3 dir4
+```
+
+```bash
+nitishkumar@nitish:~/Documents$ mkdir dir1 dir2 dir3 dir4
+nitishkumar@nitish:~/Documents$ ls
+dir1  dir2  dir3  dir4  new_directory
+
+```
