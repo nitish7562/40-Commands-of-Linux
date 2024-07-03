@@ -258,6 +258,15 @@ nitishkumar@nitish:~/Documents$ chmod o-r new_directory
 nitishkumar@nitish:~/Documents$ ls -l
 total 4
 dr-xrwx--x 2 nitishkumar nitishkumar 4096 Jul  2 23:12 new_directory
-
 ```
 
+## Check File/Folder/Content command
+### 1. ls command
+* `ls` is a shell linux command in linux. It is used to obtain a list of all filesname in a current directory.
+
+**ls options**
+1. `ls -a` (all)- It is used for list all files including hidden files.
+2. `ls -s` (size)- It is used for list the biggest files first
+3. `ls -l` (long)- This command is used for long listing files including (type, size, ownership, permissions)
+4. `ls -r` (reverse)- It is used for reverse the files in sort order
+5. `ls -t` (time)- It is used for list the most recent files first.
