@@ -267,6 +267,49 @@ dr-xrwx--x 2 nitishkumar nitishkumar 4096 Jul  2 23:12 new_directory
 **ls options**
 1. `ls -a` (all)- It is used for list all files including hidden files.
 2. `ls -s` (size)- It is used for list the biggest files first
-3. `ls -l` (long)- This command is used for long listing files including (type, size, ownership, permissions)
+3. `ls -l` (long)- List all the attributes of all files in the current directory including(type, size, ownership, permissions)
 4. `ls -r` (reverse)- It is used for reverse the files in sort order
-5. `ls -t` (time)- It is used for list the most recent files first.
+5. `ls -t` (time)- It is used for presents the files in the order of their modification time, the last modified placed first.
+
+### 2. ll command
+* `ll` command stands for long list files. `ll` command lists the files and directories in our current directory in a long format, providing detailed information such as file permissions, number of links, owner, group, size, and time of last modification .
+
+3. cat command
+* `cat` commmand is used for create files, concatinate more files together and also we can merge more than one file in a single files.
+* Other features of `cat` command is that we can read the contents of a file.
+
+**Create a file**
+```bash
+cat>testfile.txt
+```
+
+```bash
+nitishkumar@nitish:~$ cat>testfile.txt
+This is a testfile
+```
+
+**Read the file of content**
+```bash
+nitishkumar@nitish:~$ cat testfile.txt
+This is a testfile
+```
+
+**Concatinate the files**
+```bash
+nitishkumar@nitish:~$ cat testfile.txt>>testfile2.txt
+nitishkumar@nitish:~$ cat testfile2.txt
+This is a testfile2
+This is a testfile
+```
+
+**Merge files contents in an another files.
+```bash
+nitishkumar@nitish:~$ cat>testfile3.txt
+nitishkumar@nitish:~$ cat testfile.txt testfile2.txt > testfile3.txt
+nitishkumar@nitish:~$ cat testfile3.txt
+This is a testfile
+This is a testfile2
+This is a testfile
+
+```
+
