@@ -311,7 +311,7 @@ This is a testfile
 This is a testfile2
 This is a testfile
 ```
-4. grep command
+4. GREP Command
 * grep stands for `Global Regular Expression Print`
 * `grep` command is used for search a particular string or keyword from a file and prints lines matching a pattern.
 * It check line by line and print lines matching given pattern.
@@ -319,4 +319,59 @@ This is a testfile
 
 ```bash
 grep String_name/keyword_name filename
+```
+Note: `grep command is a case sensitive command`
+* For ignoring case sensative we can use `-i` command.
+
+```bash
+grep -i String_name/keyword_name filename
+```
+
+```bash
+nitishkumar@nitish:~$ cat testfile.txt
+This is a testfile
+nitishkumar@nitish:~$ grep This testfile.txt
+*This* is a testfile
+nitishkumar@nitish:~$ grep this testfile.txt
+nitishkumar@nitish:~$ grep -i this testfile.txt
+*This* is a testfile
+```
+
+5. HEAD Command
+* `head` command is used to display the first few line of a text file.
+* By default it shows first 10 lines of the file but we can specify a different number of a lines using the `-n` option.
+
+```bash
+nitishkumar@nitish:~$ head testfile.txt
+Bihar
+Hariyana
+Uttar pradesh
+jammu Kashmir
+Jharkhand
+Odisha
+Rajasthan
+Goa
+Karnataka
+Tamilnadu
+```
+* For specify a number
+```bash
+head -n number file_name
+```
+
+```bash
+nitishkumar@nitish:~$ head -n 5 testfile.txt
+Bihar
+Hariyana
+Uttar pradesh
+jammu Kashmir
+Jharkhand
+```
+
+6. TAIL Command
+* The `tail` command is countered part to `head` command. It is used to display the last few lines of a text file.
+* By default it shows last 10 lines of the file but we can specify a different number of lines with the `-n` option.
+
+```bash
+tail 
 ```
