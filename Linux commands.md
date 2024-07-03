@@ -310,6 +310,13 @@ nitishkumar@nitish:~$ cat testfile3.txt
 This is a testfile
 This is a testfile2
 This is a testfile
-
 ```
+4. grep command
+* grep stands for `Global Regular Expression Print`
+* `grep` command is used for search a particular string or keyword from a file and prints lines matching a pattern.
+* It check line by line and print lines matching given pattern.
+* we can use `grep` command anywhere like with files, searchiing for a file, directories etc.
 
+```bash
+grep String_name/keyword_name filename
+```
