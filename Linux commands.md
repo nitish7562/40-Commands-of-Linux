@@ -274,7 +274,7 @@ dr-xrwx--x 2 nitishkumar nitishkumar 4096 Jul  2 23:12 new_directory
 ### 2. ll command
 * `ll` command stands for long list files. `ll` command lists the files and directories in our current directory in a long format, providing detailed information such as file permissions, number of links, owner, group, size, and time of last modification .
 
-3. cat command
+### 3. cat command
 * `cat` commmand is used for create files, concatinate more files together and also we can merge more than one file in a single files.
 * Other features of `cat` command is that we can read the contents of a file.
 
@@ -311,7 +311,7 @@ This is a testfile
 This is a testfile2
 This is a testfile
 ```
-4. GREP Command
+### 4. GREP Command
 * grep stands for `Global Regular Expression Print`
 * `grep` command is used for search a particular string or keyword from a file and prints lines matching a pattern.
 * It check line by line and print lines matching given pattern.
@@ -337,7 +337,7 @@ nitishkumar@nitish:~$ grep -i this testfile.txt
 *This* is a testfile
 ```
 
-5. HEAD Command
+### 5. HEAD Command
 * `head` command is used to display the first few line of a text file.
 * By default it shows first 10 lines of the file but we can specify a different number of a lines using the `-n` option.
 
@@ -368,7 +368,7 @@ jammu Kashmir
 Jharkhand
 ```
 
-6. TAIL Command
+### 6. TAIL Command
 * The `tail` command is countered part to `head` command. It is used to display the last few lines of a text file.
 * By default it shows last 10 lines of the file but we can specify a different number of lines with the `-n` option.
 
@@ -398,7 +398,7 @@ Assam
 
 Note: `Both head and tail are handy for quickly inspecting the beginning or end of a file, especially when dealing with log files, Large documents, or any text file with a significant amount of content.`
 
-7. Less Command
+### 7. Less Command
 * `less` command is used to display a contents of a file in aan orgnizes way.
 * `less` command allow us to navigate forwards and backwards through the file,
 
