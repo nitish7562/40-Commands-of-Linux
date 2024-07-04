@@ -354,7 +354,7 @@ Goa
 Karnataka
 Tamilnadu
 ```
-* For specify a number
+**For specify a number**
 ```bash
 head -n number file_name
 ```
@@ -373,5 +373,42 @@ Jharkhand
 * By default it shows last 10 lines of the file but we can specify a different number of lines with the `-n` option.
 
 ```bash
-tail 
+nitishkumar@nitish:~$ tail testfile.txt
+Tripura
+Nagaland
+Madhya Pradesh
+Chhatisgarh
+Manipur
+Himachal Pradesh
+Maharastra
+Arunachal Pradesh		
+Mizoram		
+Assam
 ```
+
+**For specify a number**
+```bash
+nitishkumar@nitish:~$ tail -n 5 testfile.txt
+Himachal Pradesh
+Maharastra
+Arunachal Pradesh		
+Mizoram		
+Assam
+```
+
+Note: `Both head and tail are handy for quickly inspecting the beginning or end of a file, especially when dealing with log files, Large documents, or any text file with a significant amount of content.`
+
+7. Less Command
+* `less` command is used to display a contents of a file in aan orgnizes way.
+* `less` command allow us to navigate forwards and backwards through the file,
+
+```bash
+less file_name
+```
+
+**We can control the navigation with the help of key.**
+1. `q`: For quit the page.
+2. `space`: for Scroll down one page.
+3. `b`: scroll up one page.
+4. `enter`: scroll down one line.
+5. `k`: scroll up one line.
