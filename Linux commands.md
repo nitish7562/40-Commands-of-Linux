@@ -399,7 +399,7 @@ Assam
 Note: `Both head and tail are handy for quickly inspecting the beginning or end of a file, especially when dealing with log files, Large documents, or any text file with a significant amount of content.`
 
 ### 7. Less Command
-* `less` command is used to display a contents of a file in aan orgnizes way.
+* `less` command is used to display a contents of a file in an orgnizes way.
 * `less` command allow us to navigate forwards and backwards through the file,
 
 ```bash
