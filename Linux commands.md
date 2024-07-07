@@ -367,6 +367,10 @@ Uttar pradesh
 jammu Kashmir
 Jharkhand
 ```
+**For user according where they wants to display**
+```bash
+head -number file_name(till kanha) | tail -number(how much you want to display)
+```
 
 ### 6. TAIL Command
 * The `tail` command is countered part to `head` command. It is used to display the last few lines of a text file.
@@ -400,7 +404,11 @@ Note: `Both head and tail are handy for quickly inspecting the beginning or end 
 
 ### 7. Less Command
 * `less` command is used to display a contents of a file in an orgnizes way.
-* `less` command allow us to navigate forwards and backwards through the file,
+* `less` command allow us to navigate forwards and backwards through the file.
+* We can view multiple files with the help of `less` command.
+```bash
+less file1 file2 file3 file4
+```
 
 ```bash
 less file_name
@@ -412,3 +420,9 @@ less file_name
 3. `b`: scroll up one page.
 4. `enter`: scroll down one line.
 5. `k`: scroll up one line.
+
+Note: we can search content in file with `/ content_name`
+
+### More Command
+
+* 
