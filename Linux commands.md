@@ -423,6 +423,55 @@ less file_name
 
 Note: we can search content in file with `/ content_name`
 
-### More Command
+### 8. More Command
+* `more`  command in Linux used to view the contents of a file one screen at a time. It's useful for reading large files without opening them in an editor.
 
-* 
+```bash
+more file_name
+```
+
+```bash
+nitishkumar@Ubuntu:~$ more file1 
+hii
+```
+
+**Navigation Commands while using `more`**
+* `Space:` Move to the next page.
+* `Enter:` Move to the next line.
+* `b:` Move back one page.
+* `q:` Quit the more command.
+
+### 9. Echo Command
+* `echo` command in linux is use for display text and variables.
+
+```bash
+echo text_name
+```
+
+```bash
+nitishkumar@Ubuntu:~$ echo text_Name
+text_Name
+```
+
+**For New line**
+```bash
+echo -e "hello \nHii"
+```
+
+```bash
+nitishkumar@Ubuntu:~$ echo -e "hello \nHii"
+hello 
+Hii
+```
+
+**For Print the variable with `echo` command.
+```bash
+variable_name="value"
+echo $variable_name
+```
+
+```bash
+nitishkumar@Ubuntu:~$ v="4"
+nitishkumar@Ubuntu:~$ echo $v
+4
+```
