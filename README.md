@@ -1,3 +1,3 @@
 # Basic Linux Commands:
 
-### In this documentation we cover 40 or above commands of the Linux 
+### In this documentation we cover basic commands of the Linux 
